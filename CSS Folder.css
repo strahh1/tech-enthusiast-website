@@ -57,3 +57,8 @@ figcaption{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+ul#headline li{
+	display: inline-block;
+	margin-right: 100px;
+}
