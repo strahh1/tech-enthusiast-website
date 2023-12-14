@@ -1,30 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        a:hover {
+    background-color: rgb(235, 235, 171);
+    color:aquamarine;
+    }
+
+    .navigationbar {
+        padding-left: 10px; 
+        padding-right: 10px; 
+    }
+    
+    .logoimage{
+        width : 80px;
+        height : 80px;
+    }
+    
+    .heroimage {
+    text-align: center; 
+    position: relative; 
+    z-index: 1;
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+    }
+    .center p{
+        text-align: center;
+    }
+
+    html{ 
+    scroll-behavior: smooth; 
+    }
+
+    </style>
+    
     <link rel = "stylesheet" href = "CSS Folder.css">
     <link rel = "icon" href="SDU.tech.png">
     <title>⠀SDU Tech</title>
     <ul id ="headline">
-        <li><img src="SDU.tech.png" alt="SDU Tech logo" width="68"></li>
-        <li><h1> SDU Tech </h1></li>
+        <li styles = "padding-top: 15px;"><a href="index.html"><img src="SDU.tech.png" class = "logoimage"></a></li>
+        <li styles = "margin-bottom: 40px;"><h1> SDU Tech </h1></li>
     </ul>
+    
     
     <nav>
         <ul class="horizontal-menu">
-            <li><a href= 'index.html'>Home</a></li>
-            <li><a href="#">Tech</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href = '#'>About</a></li>
-            <li><a href = 'contactus.html'>Contacts</a></li>
+            <li class="navigationbar"><a href= 'index.html' class="highlight">Home</a>
+                <ul class="submenu">
+                    <li><a href="#article">Trending article</a></li>
+                </ul>
+            </li>
+            <li class="navigationbar"><a href="tech.html">Tech products</a>
+                <ul class="submenu">
+                    <li><a href="keyboards.html">Keyboards</a></li>
+                    <li><a href="Mouse.html">Mouse</a></li>
+                    <li><a href="monitors.html">Monitors</a></li>
+                </ul>
+            </li>
+            <li class="navigationbar"><a href="Services.html">Services</a></li>
+            <li class="navigationbar"><a href = 'about.html'>About</a></li>
+            <li class="navigationbar"><a href = 'contactus.html'>Contacts</a></li>
+            <li class="navigationbar"><a><input type="text" placeholder="Search.."></a></li>
+            <div class="dropdown">  
         </ul>
     </nav>
+
+    
+
 </head>
-<body>
-    <img src="banner1.jpg" alt="keyboard" width="1030" class="center">
-    <h2>Trending Articles</h2>
+<body style="background-color: rgb(179, 189, 189)">
+    <img src="banner1.jpg" alt="keyboard" width="900" class="heroimage">
+
+    <div class="center">
+        <p>Welcome to SDU tech a good website to gain information on trending new technological news.</p>
+        <p>This website will hold a variety of tech related information all in one place.</p>
+        <p>which includes new developements in the tech world</p>
+        <p>and brand new tech products which are available for purchase.</p>
+    </div>
+
+    <h2 id="article">Trending Articles</h2>
     <figure class='image-right'><img src="article1.jpg" alt="AI robot article" width="245" height="168"><figcaption><a href="https://medium.com/@arifrahmanhartiyan/absolutely-heres-an-article-on-the-impact-of-upcoming-technology-32712637e2e9">Absolutely, here’s an article on t...</ahref></figcaption></figure>
     <figure class='image-right'><img src="article2.jpg" alt="currys black friday deals article" width="245" height="168"><figcaption><a href="https://www.express.co.uk/life-style/science-technology/1836967/currys-black-friday-deals">Currys Black Friday 2023: 5 top...</a></figcaption></figure>
     <figure class='image-right'><img src="article3.jpg" alt="Fashion E-Commerce tech article" width = "245" height = "168"><figcaption><a href="https://www.businessoffashion.com/articles/technology/careers-market-insights-industry-news-fashion-technology-ecommerce/">What Fashion’s E-Commerce an...</a></figcaption></figure>
     <figure class='image-right'><img src="article4.jpg" alt="Technology trends for 2024 article" width="245" height="168"><figcaption><a href="https://www.simplilearn.com/top-technology-trends-and-jobs-article">18 New Technology Trends for 2...</a></figcaption></figure>
+    <figure class='image-right'><img src="article5.jpg" alt="Supercomputer that simulates entire human brain article" width="245" height="168"><figcaption><a href="https://www.newscientist.com/article/2408015-supercomputer-that-simulates-entire-human-brain-will-switch-on-in-2024/">Super human computer will turn...</a></figcaption></figure>
+    <figure class='image-right'><img src="article6.jpg" alt="Mind Reading Ai article" width="245" height="168"><figcaption><a href="https://www.newscientist.com/article/2408019-mind-reading-ai-can-translate-brainwaves-into-written-text/">This AI can read minds ...</a></figcaption></figure>
+
+    </div></figcaption></a></figure>
 </body>
 </html>

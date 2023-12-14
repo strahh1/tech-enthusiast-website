@@ -2,18 +2,20 @@ h1 {
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
+	
 }
 h2 {
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
+
 }
 body {
 	background-color: rgb(0);
 	font-family: Arial, Helvetica, sans-serif;
 }
 nav {
-	background-color: #000000;
+	background-color: #8a8080;
 }
 ul {
 	padding: 10px;
@@ -29,10 +31,44 @@ ul {
 }
 .horizontal-menu a{
 	text-decoration: none;
-	color: white;
 	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
+}
+
+
+.horizontal-menu{
+	list-style: none;
+	display: flex;
+}
+
+.horizontal-menu li{
+	color: white;
+	position: relative;
+	margin-right: 20px;
+	padding: 12px;
+}
+
+.horizontal-menu .submenu{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f948;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	top: 100%;
+	left: 0;
+}
+
+.horizontal-menu li:hover .submenu{
+	display: block;
+	z-index: 3;
+}
+
+.horizontal-menu a{
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
 }
 .center {
 	display: block;
@@ -61,4 +97,9 @@ figcaption{
 ul#headline li{
 	display: inline-block;
 	margin-right: 40%;
+}
+
+.logoimage{
+	width : 80px;
+	height : 80px;
 }
