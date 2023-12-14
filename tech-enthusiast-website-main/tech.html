@@ -1,42 +1,269 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            a:hover {
-        background-color: rgb(247, 247, 183);
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(179, 189, 189);
         }
-        .logoimage{
-        width : 80px;
-        height : 80px;
+        .hover a{
+            background-color: #f8cebb;
+
         }
 
-        </style>
-        <link rel = "stylesheet" href = "CSS Folder.css">
-        <link rel = "icon" href="SDU.tech.png">
-        <title>⠀SDU Tech</title>
-        <ul id ="headline">
-            <li styles = "padding-top: 15px;"><a href="index.html"><img src="SDU.tech.png" class = "logoimage"></a></li>
-            <li><h1> SDU Tech </h1></li>
-        </ul>
+        .center h2 {
+            text-align: center;
+        }
+
+        #product-container {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #756c67; 
+        }
+
+        #product-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start; /* Align text to the left */
+            padding: 20px;
+            background-color: #756c67; 
+        }
+
+        #product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background-color: #756c67; 
+        }
+
+        #buy-link {
+            text-decoration: none;
+            color: #63f763;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: #756c67; 
+        }
+
+    </style>
+    <link rel="stylesheet" href="CSS Folder.css">
+    <link rel="icon" href="SDU.tech.png">
+    <title>SDU Tech</title>
+</head>
+<body>
+    <ul id="headline">
+        <li style="padding-top: 15px;"><a href="index.html"><img src="SDU.tech.png" class="logoimage"></a></li>
+        <li style="margin-bottom: 40px;"><h1>SDU Tech</h1></li>
+    </ul>
     <nav>
         <ul class="horizontal-menu">
-            <li><a href= 'index.html'>Home</a></li>
-            <li><a href="tech.html">Tech</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="navigationbar"><a href="tech.html">Tech products</a>
+                <ul class="submenu">
+                    <li><a href="keyboards.html">Keyboards</a></li>
+                    <li><a href="Mouse.html">Mouse</a></li>
+                    <li><a href="monitors.html">Monitors</a></li>
+                </ul>
+            </li>
             <li><a href="Services.html">Services</a></li>
-            <li><a href='about.html'>About</a></li>
-            <li><a href='contactus.html'>Contacts</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">Contacts</a></li>
             <li class="navigationbar"><a><input type="text" placeholder="Search.."></a></li>
         </ul>
     </nav>
 
-    </head>
-    <body style="background-color: rgb(179, 189, 189)">
-        <section class = "contact">
-            <div class = "container">
-                <h2>Tech for sale</h2>
-            <h3> 
-                keyboards
-            </h3>
+    <div class="center"><h2>All Tech for sale</h2></div>
 
-    </body>
+    <div id="product-container">
+        <div id="image-container">
+            <img src="keyboard1.JPG" alt="Keyboard image 1" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">VAIHEIM K608 £23</div>
+            <a id="buy-link" href="https://redragonshop.com/products/vaiheim-k608-rainbow-keyboard" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://media.currys.biz/i/currysprod/M10254616_black?$l-large$&fmt=auto" alt="Keyboard image 2" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">LOGITECH G Pro X TKL LIGHTSPEED £199</div>
+            <a id="buy-link" href="https://www.currys.co.uk/products/logitech-g-pro-x-tkl-lightspeed-wireless-gaming-keyboard-black-10254618.html" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://www.keychron.com/cdn/shop/products/Keychron-V3-Custom-Mechanical-Keyboard-frosted-black-QMK-VIA-tenkeyless-hot-swappable-Keychron-K-Pro-switch-blue-V3-A2_f3efea5d-9482-42b6-a2d4-7d4c28cee951.jpg?v=1664265536&width=1000" alt="Keyboard image 3" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">Keychron V3 QMK £63</div>
+            <a id="buy-link" href="https://www.keychron.com/products/keychron-v3-qmk-custom-mechanical-keyboard" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://mechanicalkeyboards.com/shop/images/products/large_9315_large_DKON2161ST-USPHSFTPGC1U2Z_main.png" alt="Keyboard image 4" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">Ducky x MK Strawberry Frog One 3 £106</div>
+            <a id="buy-link" href="https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=9315" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://www.keyboardco.com/product-images/filco_majestouch_3_tenkeyless_double_shot_black_uk_large.jpg" alt="Keyboard image 5" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">UK Filco Majestouch 3 £150.00</div>
+            <a id="buy-link" href="https://www.keyboardco.com/keyboard/uk-filco-majestouch-3-tenkeyless-mx-brown-tactile-double-shot-keyboard.asp" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://mechanicalkeyboards.com/shop/images/products/large_MKDUO-65DS22AR2_main.jpg" alt="Keyboard image 6" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">MK Duo 60% XT Keyboard £129</div>
+            <a id="buy-link" href="https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=9576" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://media.currys.biz/i/currysprod/10251627?$l-large$&fmt=auto" alt="monitor Image 1" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">ACER KB272Ebi £129</div>
+            <a id="buy-link" href="https://www.currys.co.uk/products/acer-kb272ebi-full-hd-27-ips-lcd-monitor-black-10251627.html" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://media.currys.biz/i/currysprod/10226075?$l-large$&fmt=auto" alt="monitor Image 2" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">HP M27fw £129</div>
+            <a id="buy-link" href="https://www.currys.co.uk/products/hp-m27fw-full-hd-27-ips-lcd-monitor-white-10226075.html" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://m.media-amazon.com/images/I/71SmT4ugg6L._AC_SX679_.jpg" alt="monitor Image 3" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">KOORUI Monitor £110</div>
+            <a id="buy-link" href="https://www.amazon.co.uk/KOORUI-Compatible-Adjustable-Mountable-DisplayPort/dp/B0B6B1RDKB?ref_=Oct_d_obs_d_428652031_0&pd_rd_i=B0B6B1RDKB" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://m.media-amazon.com/images/I/71PlahfB7tL._AC_SX679_.jpg" alt="monitor Image 4" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">ARZOPA Portable Monitor £100</div>
+            <a id="buy-link" href="https://www.amazon.co.uk/ARZOPA-Portable-A1-15-6-inch-1920%C3%971080/dp/B0CJCCDV65?ref_=Oct_d_onr_d_428652031_4&pd_rd_i=B0CJCCDV65" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://m.media-amazon.com/images/I/91BlpmYWl-L._AC_SX679_.jpg" alt="monitor Image 5" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">Samsung LU32R590CWPXXU £284</div>
+            <a id="buy-link" href="https://www.amazon.co.uk/Samsung-LU32R590CWPXXU-Curved-Monitor-Displayport/dp/B0BYDVP228?ref_=Oct_d_omwf_d_428652031_1&pd_rd_i=B0BYDVP228" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://m.media-amazon.com/images/I/71-xV1Tum3L.__AC_SX300_SY300_QL70_ML2_.jpg" alt="monitor Image 6" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">CRUA Monitor £140</div>
+            <a id="buy-link" href="https://www.amazon.co.uk/CRUA-Computer-Frameless-FreeSync-DisplayPort/dp/B0CHJSPNQH/ref=sr_1_3_sspa?s=computers&sr=1-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGZfYnJvd3Nl&psc=1" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://m.media-amazon.com/images/I/81DRVGXgPKL._AC_SX679_.jpg" alt="mouse image 1" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">Razer DeathAdder V3 Pro £149.99</div>
+            <a id="buy-link" href="https://www.razer.com/gb-en/gaming-mice/Razer-DeathAdder-V3-Pro/RZ01-04630200-R3G1" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://img.ebyrcdn.net/982459-840147-800.jpg" alt="mouse image 2" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">Logitech G305 Lightspeed £49</div>
+            <a id="buy-link" href="https://assets.ikhnaie.link/click.html?clickref=pcg-gb-3155529198740666400&wgcampaignid=138489&wgprogramid=267255&product=1&wglinkid=5081844&productid=840147&productname=Logitech+G305+Lightspeed+Wireless+Gaming+Mouse&wgtarget=https%3A%2F%2Fwww.ebuyer.com%2F840147-logitech-g305-lightspeed-wireless-gaming-mouse-910-005283" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://m.media-amazon.com/images/I/71aD3ncHi7L._AC_SX679_.jpg" alt="mouse image 3" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">Razer Naga Pro £119</div>
+            <a id="buy-link" href="https://www.amazon.co.uk/dp/B08D27XXRY?th=1&psc=1&ascsubtag=pcg-gb-6303276706278020000-21" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://img.ebyrcdn.net/1062102-1124466-800.jpg" alt="mouse image 4" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">Logitech G203 Lightsync £38</div>
+            <a id="buy-link" href="https://www.ebuyer.com/1124466-logitech-g203-lightsync-gaming-mouse-910-005796?wgu=267255_138489_17025691291043_c54f0b8784&wgexpiry=1734105129&utm_source=webgains&utm_medium=referral&utm_content=60869&utm_campaign=Future%20Publishing%20Ltd_138489" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://m.media-amazon.com/images/I/51XuCmeToCL._AC_SX679_.jpg" alt="mouse image 5" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">FanTech Aria XD7 £180</div>
+            <a id="buy-link" href="https://www.amazon.co.uk/gp/product/B0B7CYT533?tag=rtings-u-mc-21&ie=UTF8" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+
+    <div id="product-container">
+        <div id="image-container">
+            <img src="https://m.media-amazon.com/images/I/81JZNeQgurL._AC_SX679_.jpg" alt="mouse image 6" width="245" height="168">
+        </div>
+        <div id="product-info">
+            <div id="product-title">CORSAIR DARKSTAR RGB £119</div>
+            <a id="buy-link" href="https://www.amazon.co.uk/CORSAIR-DARKSTAR-WIRELESS-Gaming-Mouse/dp/B0C6R3CBJ5?tag=hawk-future-21&linkCode=df5&ascsubtag=grd-gb-8810433251408173000-21" target="_blank">Click to buy now!</a>
+        </div>
+    </div>
+</body>
 </html>

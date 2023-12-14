@@ -9,33 +9,62 @@
         width : 80px;
         height : 80px;
         }
+        .center p{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+        padding-right: 
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .fileselect {
+         text-align: center;
+         padding-right:
+        }
+            input:focus {
+        background-color: yellow;
+        }
         </style>
         <link rel = "stylesheet" href = "CSS Folder.css">
         <link rel = "icon" href="SDU.tech.png">
         <title>⠀SDU Tech</title>
         <ul id ="headline">
             <li styles = "padding-top: 15px;"><a href="index.html"><img src="SDU.tech.png" class = "logoimage"></a></li>
-            <li><h1> SDU Tech </h1></li>
+            <li styles = "margin-bottom: 40px;"><h1> SDU Tech </h1></li>
         </ul>
     <nav>
         <ul class="horizontal-menu">
-            <li><a href= 'index.html'>Home</a></li>
-            <li><a href="tech.html">Tech</a></li>
+            <li><a href='index.html'>Home</a></li>
+            <li class="navigationbar"><a href="tech.html">Tech products</a>
+                <ul class="submenu">
+                    <li><a href="keyboards.html">Keyboards</a></li>
+                    <li><a href="Mouse.html">Mouse</a></li>
+                    <li><a href="monitors.html">Monitors</a></li>
+                </ul>
+            </li>
             <li><a href="Services.html">Services</a></li>
-            <li><a href = 'about.html'>About</a></li>
-            <li><a href = 'contactus.html'>Contacts</a></li>
+            <li><a href='about.html'>About</a></li>
+            <li><a href='contactus.html'>Contacts</a></li>
             <li class="navigationbar"><a><input type="text" placeholder="Search.."></a></li>
         </ul>
     </nav>
     </head>
     <body style="background-color: rgb(179, 189, 189)">
-        <section class = "contact">
-            <div class = "container">
+        <section>
+            <div>
                 <h2>Services</h2>
-        <h3>
-            some of the services we offer include us being able to send you reccomendations on how to improve your set up. if you attach an image below we will be able to respond and give advice around any optimisation that can be done with your set and new tech items that would improve the set up.
-        </h3>
+        <div class="center">
+            <img src="service.jpg" alt="setup" width="700">
+            <p>some of the services we offer include us being able to send you reccomendations on how to improve your set up.</p>
+            <p>if you attach an image below we will be able to respond and give advice around any optimisation that can be done with your setup</p>
+            <p>and new tech items that would improve the set up. Upload the images of your set up down below using the file uploader.</p>
+        </div>
     </body>
-    <label for="myfile">Select a file:</label>
-    <input type="file" id="myfile" name="myfile">
+    <div class="fileselect"><label for="myfile">Select a file:</label></div>
+    <div class="center"><input type="file" id="myfile" name="myfile"></div>
 </html>
